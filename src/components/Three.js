@@ -1,6 +1,6 @@
 import React, { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
-import Skull from "./Skull";
+import Porsche from "./Porsche";
 import { OrbitControls } from "@react-three/drei";
 import styled from "styled-components";
 
@@ -12,7 +12,7 @@ const Three = () => {
         <ambientLight intensity={0.1} />
         <directionalLight position={[-2, 5, 2]} intensity={1} />
         <Suspense fallback={null}>
-          <Skull />
+          <Porsche />
         </Suspense>
       </Canvas>
     </Wrapper>
